@@ -1,0 +1,25 @@
+{
+  "name": "@components/components",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build-dev": "webpack --mode development",
+    "build-prod": "webpack --mode production",
+    "build-types": "tsc --emitDeclarationOnly --declaration index.ts"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.2.118",
+    "babel-loader": "^8.2.3",
+    "swc-loader": "^0.1.15",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.2",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "worker-loader": "^3.0.8"
+  },
+  "dependencies": {
+    "@wasm/wasm-func": "workspace:*",
+    "comlink": "^4.3.1"
+  }
+}

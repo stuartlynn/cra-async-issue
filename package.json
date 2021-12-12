@@ -1,0 +1,23 @@
+{
+  "name": "web_workers",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/main",
+      "packages/components",
+      "packages/wasm-func"
+    ],
+    "nohoist": [
+      "**/babel-loader",
+      "**webpack",
+      "**webpack-cli"
+    ]
+  },
+  "packageManager": "yarn@3.1.1",
+  "dependencies": {
+    "rust-wasm-react-calculator": "^0.1.7"
+  }
+}
